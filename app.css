@@ -1,0 +1,82 @@
+.thumbnail {
+    background-image: url(replace2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body a {
+    font-family:'Mate SC';
+    font-weight: 300;
+    font-style:normal;
+    background-color: #F4F1E8;
+}
+.nav > a {
+    background-color:#F4F1E8;
+    display: inline;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    color:#F2A663;
+    text-decoration: none;
+    transition: all ease 500ms;
+    transition-duration: 250ms;
+    transition-property: color, background-color;
+    transition-delay: 0ms;
+    transition-timing-function: ease;
+}
+
+.nav > a:hover {
+    background-color:#F4F1E8;
+    color:#F2A663;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    
+
+}
+.content {
+    border: solid 1px #F2A663;
+    padding: 1em;
+    width: 75%;
+    }
