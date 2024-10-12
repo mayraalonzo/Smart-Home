@@ -1,3 +1,243 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    text-align: left;
+}
+
+.dropdown-content a {
+    padding: 10px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7; /* Slightly transparent */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #444;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+/* Icon row */
+.icon-row {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Even spacing between icons */
+    align-items: center; /* Center icons vertically */
+    margin: 20px 0; /* Space above and below */
+    height: 100vh; /* Full height for vertical centering */
+}
+
+.icon {
+    width: 50px; /* Set icon size */
+    height: auto; /* Maintain aspect ratio */
+    animation: bounce 1s infinite; /* Add bounce animation */
+}
+
+/* Image gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of images */
+    justify-content: space-between; /* Space between images */
+}
+
+.image-gallery img {
+    flex: 1 1 30%; /* Adjusts to fit 3 images per row */
+    margin: 5px; /* Space around images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif; /* Use a clean, modern font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improve readability */
+}
+
+header {
+    background-color: #4CAF50; /* Green background for the header */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center align the header content */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display items in a line */
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text for links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    padding: 20px; /* Padding around the main content */
+}
+
+section {
+    margin-bottom: 20px; /* Spacing between articles */
+}
+
+article {
+    margin-bottom: 15px; /* Spacing between paragraphs */
+    border: 1px solid #ddd; /* Light gray border around articles */
+    padding: 15px; /* Padding inside each article */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for articles */
+}
+
+article img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center align footer text */
+    padding: 10px 0; /* Padding for the footer */
+    position: relative; /* Ensure it stays at the bottom */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     
     margin: 0px;
