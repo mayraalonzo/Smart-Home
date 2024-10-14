@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent box sizing */
+    box-sizing: border-box; 
 }
 
 .header {
@@ -26,44 +26,44 @@
 
 nav {
     display: flex;
-    padding: 10px 6%; /* Adjust padding as needed */
+    padding: 10px 6%; 
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: background for nav */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .content {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    padding: 80px 20px; /* Add top padding to avoid overlap with nav */
+    flex-direction: column; 
+    padding: 80px 20px;
 }
 
 .item {
     display: flex;
-    align-items: center; /* Center items vertically */
-    margin: 20px 0; /* Space between items */
+    align-items: center; 
+    margin: 20px 0; 
 }
 
 .item.reverse {
-    flex-direction: row-reverse; /* Reverse the order for alternate items */
+    flex-direction: row-reverse;
 }
 
 .item img {
-    width: 50%; /* Adjust image width */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 5px; /* Optional: add rounded corners */
+    width: 50%; 
+    height: auto; 
+    border-radius: 5px; 
 }
 
 .text-box {
-    background-color: rgba(15, 105, 140, 0.8); /* Semi-transparent background */
-    padding: 20px; /* Padding around text */
-    width: 50%; /* Match the width of the image */
-    color: #fff; /* Text color */
-    margin-left: 20px; /* Space between image and text box */
-    border-radius: 5px; /* Optional: rounded corners */
+    background-color: rgba(15, 105, 140, 0.8); 
+    padding: 20px; 
+    width: 50%; 
+    color: #fff; 
+    margin-left: 20px; 
+    border-radius: 5px; 
 }
 
 
@@ -99,37 +99,37 @@ nav {
 
 .content {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     padding: 20px;
 }
 
 .item {
     display: flex;
-    align-items: center; /* Center items vertically */
-    margin: 20px 0; /* Space between items */
+    align-items: center; 
+    margin: 20px 0; 
 }
 
 .item.left {
-    flex-direction: row; /* Default order */
+    flex-direction: row; 
 }
 
 .item.right {
-    flex-direction: row-reverse; /* Reverse the order for right-aligned items */
+    flex-direction: row-reverse; 
 }
 
 .item img {
-    width: 50%; /* Adjust image width */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 5px; /* Optional: add rounded corners */
+    width: 50%; 
+    height: auto; 
+    border-radius: 5px; 
 }
 
 .text-box {
-    background-color: rgba(15, 105, 140, 0.8); /* Semi-transparent background */
-    padding: 20px; /* Padding around text */
-    width: 50%; /* Match the width of the image */
-    color: #fff; /* Text color */
-    margin-left: 20px; /* Space between image and text box */
-    border-radius: 5px; /* Optional: rounded corners */
+    background-color: rgba(15, 105, 140, 0.8); 
+    padding: 20px; 
+    width: 50%; 
+    color: #fff; 
+    margin-left: 20px; 
+    border-radius: 5px; 
 }
 
 
@@ -137,7 +137,7 @@ nav {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent box sizing */
+    box-sizing: border-box; 
 }
 
 .header {
@@ -164,33 +164,33 @@ nav {
 
 .content {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     padding: 20px;
 }
 
 .item {
     display: flex;
-    align-items: center; /* Center items vertically */
-    margin: 20px 0; /* Space between items */
+    align-items: center; 
+    margin: 20px 0;
 }
 
 .item.reverse {
-    flex-direction: row-reverse; /* Reverse the order for alternate items */
+    flex-direction: row-reverse;
 }
 
 .item img {
-    width: 50%; /* Adjust image width */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 5px; /* Optional: add rounded corners */
+    width: 50%; 
+    height: auto; 
+    border-radius: 5px; 
 }
 
 .text-box {
-    background-color: rgba(15, 105, 140, 0.8); /* Semi-transparent background */
-    padding: 20px; /* Padding around text */
-    width: 50%; /* Match the width of the image */
-    color: #fff; /* Text color */
-    margin-left: 20px; /* Space between image and text box */
-    border-radius: 5px; /* Optional: rounded corners */
+    background-color: rgba(15, 105, 140, 0.8);
+    padding: 20px; 
+    width: 50%; 
+    color: #fff; 
+    margin-left: 20px; 
+    border-radius: 5px; 
 }
 * {
     margin: 0;
@@ -207,29 +207,29 @@ nav {
 
 .content {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     padding: 20px;
 }
 
 .item {
     display: flex;
-    align-items: center; /* Center items vertically */
-    margin: 10px 0; /* Space between rows */
+    align-items: center; 
+    margin: 10px 0; 
 }
 
 .item.reverse {
-    flex-direction: row-reverse; /* Reverse the order for alternate items */
+    flex-direction: row-reverse; 
 }
 
 .item img {
-    width: 50%; /* Adjust width of the image */
+    width: 50%; 
     height: auto;
 }
 
 .item p {
-    width: 50%; /* Adjust width of the description */
-    text-align: left; /* Align text to the left */
-    padding: 0 10px; /* Optional padding for spacing */
+    width: 50%; 
+    text-align: left; 
+    padding: 0 10px; 
 }
 
 .text{
@@ -245,27 +245,26 @@ nav {
     border: 2px solid #F2A663;
 }
 .headerr {
-    background-image: url('img/page1header.png'); /* Path to your image */
-    height: 540px; /* Adjust the height as needed */
-    background-size: cover; /* Ensures the image covers the entire header */
-    display: flex; /* Allows centering the text */
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
-    color: white; /* Change text color for visibility */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better text visibility */
+    background-image: url('img/page1header.png'); 
+    height: 540px; 
+    background-size: cover; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     filter: brightness(0.75);
 }
 
 .header2 {
-    background-image: url('img/cleaningheader.png'); /* Path to your image */
-    height: 540px; /* Adjust the height as needed */
-    background-size: cover; /* Ensures the image covers the entire header */
-    display: flex; /* Allows centering the text */
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
-    color: white; /* Change text color for visibility */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better text visibility */
-    filter: brightness(0.75);
+    background-image: url('img/cleaningheader.png'); 
+    height: 540px; 
+    background-size: cover; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 .header3 {
     background-image: url('img/header 3 2.png'); /* Path to your image */
@@ -415,70 +414,109 @@ footer p:last-of-type {
 .content-text:last-of-type {
     font-size: 1em; /* Adjust description size */
     margin: 10px 0 0; /* Space above the description */
+}footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin: 0 10px 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 10px;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #4CAF50; /* Link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
 }
 nav {
     display: flex;
-    justify-content: space-between; /* Logo on the left, links on the right */
-    align-items: center; /* Center items vertically */
-    position: fixed; /* Fixed at the top */
-    top: 0; /* Start at the very top */
-    left: 0; /* Ensure it starts from the left edge */
-    width: 100%; /* Full width of the page */
-    z-index: 1000; /* Ensure it appears above other content */
-    background-color: rgba(244, 241, 232, 0.5); /* Light color with 50% opacity */
-    padding: 10px 6%; /* Adjust padding as needed */
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background-color: rgba(244, 241, 232, 0.5); 
+    padding: 10px 6%; 
 }
 
 nav img {
-    height: 40px; /* Adjust logo height for consistency */
-    width: auto; /* Maintain aspect ratio */
+    height: 40px; 
+    width: auto; 
 }
 
 .nav-links {
-    flex-grow: 1; /* Allow nav-links to take available space */
-    text-align: right; /* Align links to the right */
+    position: fixed;
+    flex-grow: 1; 
+    text-align: right; 
 }
 
 .nav-links ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Vertically center links */
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+    align-items: center; 
 }
 
 .nav-links ul li {
-    margin-left: 20px; /* Space between items */
+    margin-left: 20px; 
 }
 
 .nav-links ul li a {
-    color: #333; /* Text color for links */
+    color: #333; 
     text-decoration: none;
-    font-size: 13px; /* Ensure consistent font size */
-    line-height: 1.5; /* Ensure consistent line height */
-    padding: 8px 12px; /* Padding for links */
-    display: flex; /* Ensure the anchor takes the full space */
-    align-items: center; /* Center the text vertically */
+    font-size: 13px; 
+    line-height: 1.5; 
+    padding: 8px 12px; 
+    display: flex; 
+    align-items: center; 
 }
 
 .nav-links ul li:hover {
-    text-decoration: none; /* Optional: underline on hover */
+    text-decoration: none; 
 }
 .dropdown {
     display: none;
-    position: absolute; /* Ensure the dropdown is positioned correctly */
+    position: absolute; 
 }
 
 .dropdown-content {
-    display: none; /* Hide the dropdown by default */
-    position: absolute; /* Position it relative to the parent */
-    top: 100%; /* Align it below the parent */
-    left: 0; /* Align it to the left */
-    background-color: rgba(244, 241, 232, 0.9); /* Light background for dropdown */
-    z-index: 100; /* Ensure it appears above other content */
-    padding: 10px 0; /* Padding for dropdown items */
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: rgba(244, 241, 232, 0.9); 
+    z-index: 100; 
+    padding: 10px 0; 
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+    display: block; 
 }
+
