@@ -1,334 +1,484 @@
-.container {
-    padding:2rem;
-}
-.slider-wrapper {
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
-}
-.slider {
-    display: flex;
-    aspect-ratio: 16 / 11;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 1rem;
-}
-.slider img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-.slider-nav a:hover {
-    opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hero {
-    filter:brightness(50%);
-}
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
+    box-sizing: border-box; /* Ensure consistent box sizing */
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(51, 52, 58, 0.7), rgba(4, 9, 30, 0.7)), url(img/hero.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.headerr {
+    height: 540px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.75);
 }
 
 nav {
-    background-color: #333;
-}
-
-.navbar {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
-}
-
-.navbar li {
-    position: relative;
-}
-
-.navbar a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #575757;
-}
-
-/* Dropdown menu */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content li {
-    text-align: left;
-}
-
-.dropdown-content a {
-    padding: 10px;
-}
-
-/* Hero section */
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.header-image {
+    padding: 10px 6%; /* Adjust padding as needed */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     width: 100%;
-    height: auto;
-    opacity: 0.7; /* Slightly transparent */
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: background for nav */
 }
 
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 80px 20px; /* Add top padding to avoid overlap with nav */
 }
 
-/* Main content styles */
-main {
+.item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 20px 0; /* Space between items */
+}
+
+.item.reverse {
+    flex-direction: row-reverse; /* Reverse the order for alternate items */
+}
+
+.item img {
+    width: 50%; /* Adjust image width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.text-box {
+    background-color: rgba(15, 105, 140, 0.8); /* Semi-transparent background */
+    padding: 20px; /* Padding around text */
+    width: 50%; /* Match the width of the image */
+    color: #fff; /* Text color */
+    margin-left: 20px; /* Space between image and text box */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(51, 52, 58, 0.7), rgba(4, 9, 30, 0.7)), url(img/hero.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.headerr {
+    background-image: url('img/page1header.png');
+    height: 540px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.75);
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    color: #444;
-}
-
-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #575757;
-}
-
-/* Icon row */
-.icon-row {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-around; /* Even spacing between icons */
-    align-items: center; /* Center icons vertically */
-    margin: 20px 0; /* Space above and below */
-    height: 100vh; /* Full height for vertical centering */
-}
-
-.icon {
-    width: 50px; /* Set icon size */
-    height: auto; /* Maintain aspect ratio */
-    animation: bounce 1s infinite; /* Add bounce animation */
-}
-
-/* Image gallery */
-.image-gallery {
+.item {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of images */
-    justify-content: space-between; /* Space between images */
+    align-items: center; /* Center items vertically */
+    margin: 20px 0; /* Space between items */
 }
 
-.image-gallery img {
-    flex: 1 1 30%; /* Adjusts to fit 3 images per row */
-    margin: 5px; /* Space around images */
-    height: auto; /* Maintain aspect ratio */
+.item.left {
+    flex-direction: row; /* Default order */
 }
 
-/* Bounce animation */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
+.item.right {
+    flex-direction: row-reverse; /* Reverse the order for right-aligned items */
 }
 
-body {
-    font-family: Arial, sans-serif; /* Use a clean, modern font */
+.item img {
+    width: 50%; /* Adjust image width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.text-box {
+    background-color: rgba(15, 105, 140, 0.8); /* Semi-transparent background */
+    padding: 20px; /* Padding around text */
+    width: 50%; /* Match the width of the image */
+    color: #fff; /* Text color */
+    margin-left: 20px; /* Space between image and text box */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+
+
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Improve readability */
+    box-sizing: border-box; /* Ensure consistent box sizing */
 }
 
-header {
-    background-color: #4CAF50; /* Green background for the header */
-    color: white; /* White text color */
-    padding: 20px; /* Padding around the header */
-    text-align: center; /* Center align the header content */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(51, 52, 58, 0.7), rgba(4, 9, 30, 0.7)), url(img/hero.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-header h1 {
-    margin: 0; /* Remove default margin */
+.headerr {
+    background-image: url('img/page1header.png');
+    height: 540px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.75);
 }
 
-nav ul {
-    list-style: none; /* Remove bullet points */
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 20px 0; /* Space between items */
+}
+
+.item.reverse {
+    flex-direction: row-reverse; /* Reverse the order for alternate items */
+}
+
+.item img {
+    width: 50%; /* Adjust image width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.text-box {
+    background-color: rgba(15, 105, 140, 0.8); /* Semi-transparent background */
+    padding: 20px; /* Padding around text */
+    width: 50%; /* Match the width of the image */
+    color: #fff; /* Text color */
+    margin-left: 20px; /* Space between image and text box */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(51, 52, 58, 0.7),rgba(4,9,30,0.7)),url(img/hero.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Space between rows */
+}
+
+.item.reverse {
+    flex-direction: row-reverse; /* Reverse the order for alternate items */
+}
+
+.item img {
+    width: 50%; /* Adjust width of the image */
+    height: auto;
+}
+
+.item p {
+    width: 50%; /* Adjust width of the description */
+    text-align: left; /* Align text to the left */
+    padding: 0 10px; /* Optional padding for spacing */
+}
+
+.text{
+    color:white;
+    font-size: 50px;
+    position: absolute;
+    top:50%;
+    left:25%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 0 black;
+}
+.decorate{
+    border: 2px solid #F2A663;
+}
+.headerr {
+    background-image: url('img/page1header.png'); /* Path to your image */
+    height: 540px; /* Adjust the height as needed */
+    background-size: cover; /* Ensures the image covers the entire header */
+    display: flex; /* Allows centering the text */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    color: white; /* Change text color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better text visibility */
+    filter: brightness(0.75);
+}
+
+.header2 {
+    background-image: url('img/cleaningheader.png'); /* Path to your image */
+    height: 540px; /* Adjust the height as needed */
+    background-size: cover; /* Ensures the image covers the entire header */
+    display: flex; /* Allows centering the text */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    color: white; /* Change text color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better text visibility */
+    filter: brightness(0.75);
+}
+.header3 {
+    background-image: url('img/header 3 2.png'); /* Path to your image */
+    height: 540px; /* Adjust the height as needed */
+    background-size: cover; /* Ensures the image covers the entire header */
+    display: flex; /* Allows centering the text */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    color: white; /* Change text color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better text visibility */
+    filter: brightness(0.75);
+}
+
+.hello {
+    width: 100%;
+    height: 75%;
+}
+.item {
+    display: flex; /* Align items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    position: relative; /* Position relative for absolute children */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Keeps the logo on the left and links on the right */
+    align-items: center;
+    position: fixed; /* Keep it fixed at the top */
+    top: 0; /* Position it at the very top */
+    left: 0; /* Ensure it starts from the left edge */
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensure it appears above other content */
+    background-color: rgba(244, 241, 232, 0.5); /* Background color with 50% opacity */
+    padding: 10px 6%; /* Adjust padding as needed */
+}
+
+.slime {
+    width: 100%;
+    height: 75%;
+}
+footer {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 20px; /* Space around content */
+    text-align: left; /* Align text to the left */
+    font-family: Arial, sans-serif; /* Font style */
+    color: #333; /* Dark text color */
+}
+
+footer h2, footer h3 {
+    margin-top: 0; /* Remove top margin */
+}
+
+footer p {
+    margin: 10px 0; /* Space above and below paragraphs */
+}
+
+footer ul {
+    list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
 }
 
-nav ul li {
-    display: inline; /* Display items in a line */
-    margin: 0 15px; /* Spacing between menu items */
+footer ul li {
+    margin: 5px 0; /* Space between list items */
 }
 
-nav a {
-    color: white; /* White text for links */
+footer ul li a {
     text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Bold text for links */
+    color: #007BFF; /* Link color */
 }
 
-nav a:hover {
+footer ul li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-main {
-    padding: 20px; /* Padding around the main content */
+footer p:last-of-type {
+    font-size: 0.9em; /* Smaller text for copyright */
+    color: #777; /* Lighter text color */
+}
+.header {
+    position: relative; /* Position the header for absolute positioning of the text */
+    text-align: center; /* Center align text */
 }
 
-section {
-    margin-bottom: 20px; /* Spacing between articles */
-}
-
-article {
-    margin-bottom: 15px; /* Spacing between paragraphs */
-    border: 1px solid #ddd; /* Light gray border around articles */
-    padding: 15px; /* Padding inside each article */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background for articles */
-}
-
-article img {
-    max-width: 100%; /* Responsive images */
+.header-image {
+    width: 100%; /* Full width */
     height: auto; /* Maintain aspect ratio */
 }
 
-footer {
-    background-color: #333; /* Dark background for the footer */
-    color: white; /* White text color */
-    text-align: center; /* Center align footer text */
-    padding: 10px 0; /* Padding for the footer */
-    position: relative; /* Ensure it stays at the bottom */
-    bottom: 0; /* Position at the bottom */
+.header-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset for exact center */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
+}
+
+.header-text:first-of-type {
+    font-size: 70px; /* Adjust title size */
+    margin: 0; /* Remove default margin */
+}
+
+.header {
+    position: relative; /* Position for absolute positioning of the text */
+    text-align: center; /* Center align text */
+}
+
+.header-image {
     width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body{
-    
-    margin: 0px;
+.header-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset for exact center */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
 }
-main {
-    margin-left: 20px;
-    margin-right: 20px;
+
+.content {
+    position: relative; /* Position for absolute positioning of the text */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Space between header and content */
 }
-.navbar ul{
-    list-style: none;
-    background-color:#F4F1E8;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+
+.content-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
 }
-.navbar a{
-    color:black;
+
+.content-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset for exact center */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
+}
+
+.content-text:first-of-type {
+    font-size: 2em; /* Adjust subtitle size */
+}
+
+.content-text:last-of-type {
+    font-size: 1em; /* Adjust description size */
+    margin: 10px 0 0; /* Space above the description */
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Logo on the left, links on the right */
+    align-items: center; /* Center items vertically */
+    position: fixed; /* Fixed at the top */
+    top: 0; /* Start at the very top */
+    left: 0; /* Ensure it starts from the left edge */
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensure it appears above other content */
+    background-color: rgba(244, 241, 232, 0.5); /* Light color with 50% opacity */
+    padding: 10px 6%; /* Adjust padding as needed */
+}
+
+nav img {
+    height: 40px; /* Adjust logo height for consistency */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    flex-grow: 1; /* Allow nav-links to take available space */
+    text-align: right; /* Align links to the right */
+}
+
+.nav-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically center links */
+}
+
+.nav-links ul li {
+    margin-left: 20px; /* Space between items */
+}
+
+.nav-links ul li a {
+    color: #333; /* Text color for links */
     text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+    font-size: 13px; /* Ensure consistent font size */
+    line-height: 1.5; /* Ensure consistent line height */
+    padding: 8px 12px; /* Padding for links */
+    display: flex; /* Ensure the anchor takes the full space */
+    align-items: center; /* Center the text vertically */
 }
-.navbar a:hover{
-    background-color:antiquewhite;
 
+.nav-links ul li:hover {
+    text-decoration: none; /* Optional: underline on hover */
 }
-.navbar li{
-    float: left;
+.dropdown {
+    display: none;
+    position: absolute; /* Ensure the dropdown is positioned correctly */
 }
-.thumbnail {
-    background-image: url(replace2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+
+.dropdown-content {
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position it relative to the parent */
+    top: 100%; /* Align it below the parent */
+    left: 0; /* Align it to the left */
+    background-color: rgba(244, 241, 232, 0.9); /* Light background for dropdown */
+    z-index: 100; /* Ensure it appears above other content */
+    padding: 10px 0; /* Padding for dropdown items */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
 }
