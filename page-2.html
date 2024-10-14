@@ -9,88 +9,96 @@
         <link rel="stylesheet" href="app.css">
     </head>
     <body>
-        <header>
+        <header class="header2">
             <h1>Automated Cleaning & Convenience</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="page-5.html">About Us</a></li>
-                    <li><a href="page-4.html">Contact Us</a></li>
-                </ul>
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="House Logo">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="dropdown">
+                            <a href="#">Menu ▾</a>
+                            <ul class="dropdown-content">
+                                <li><a href="page-1.html">Automated Technology & Safety</a></li>
+                                <li><a href="page-2.html">Automated Cleaning & Convenience</a></li>
+                                <li><a href="page-3.html">Nursery & Study</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-
-
-        <main>
-                <article>
-                    <h2>Aluminum Wedge + Dishwasher</h2>
-                    <p> A cleaning tool that combines an aluminum wedge with a dishwasher to enhance the efficiency of cleaning kitchen items, making the process more convenient and thorough.</p>
-                    <img src="dishwasher.PNG" alt="Aluminum Wedge + Dishwasher" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Robot Mice - Dirt/Dusting</h2>
-                    <p>Small, autonomous robots designed for dirt collection and dusting, simplifying the cleaning process by handling routine maintenance tasks.</p>
-                    <img src="mice.PNG" alt="Robot Mice - Dirt/Dusting" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Incinerator</h2>
-                    <p>A waste management device that burns non-recyclable materials to reduce their volume, integrated with automated systems to streamline waste disposal and handling.</p>
-                    <img src="incinerator.PNG" alt="Incinerator" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Copper Scrap Rats - Take Larger Trash to Incinerator</h2>
-                    <p>Robotic units that transport larger waste items to an incinerator, facilitating easier and more efficient waste management.</p>
-                    <img src="copper.PNG" alt="Copper Scrap Rats - Take Larger Trash to Incinerator" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Voice Clock</h2>
-                    <p>A timekeeping device that announces the current time, providing hands-free convenience and accessibility.</p>
-                    <img src="clock.PNG" alt="Voice Clock" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Voice: Schedule, Reminders, etc.</h2>
-                    <p>An intelligent assistant that manages schedules, sets reminders, and provides verbal updates, integrating with other automated systems for seamless daily management.</p>
-                    <img src="voice.PNG" alt="Voice: Schedule, Reminders, etc." width="600" height="400">
-                </article>
-                <article>
-                    <h2>Breakfast Stove</h2>
-                    <p>An automated cooking appliance that prepares breakfast foods with minimal user input, programmed to start cooking at a specific time and adjust settings for different meals.</p>
-                    <img src="stove.PNG" alt="Breakfast Stove" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Weather Box</h2>
-                    <p>A device that provides real-time weather updates and forecasts, with automated adjustments to indoor climate controls based on external conditions.</p>
-                    <img src="weather.PNG" alt="Weather Box" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Garage Doors</h2>
-                    <p>Electrically operated doors that open and close with remote control or automated scheduling, enhancing convenience and security for vehicle access.</p>
-                    <img src="garage.PNG" alt="Garage Doors" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Patio Tables: Cards, Drinks, Food, Music</h2>
-                    <p>Smart patio tables that integrate features like card games, drink dispensers, food warmers, and music systems, creating a fully automated outdoor experience.</p>
-                    <img src="patio.PNG" alt="Patio Tables: Cards, Drinks, Food, Music" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Bed Warmers</h2>
-                    <p>Devices that preheat the bed to a comfortable temperature before sleep, ensuring a cozy and pleasant rest.</p>
-                    <img src="bed-warmer.PNG" alt="Bed Warmers" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Baths</h2>
-                    <p>Automated bathing systems that adjust water temperature, pressure, and duration based on user preferences or preset routines.</p>
-                    <img src="bath.PNG" alt="Baths" width="600" height="400">
-                </article>
-                <article>
-                    <h2>Garden Sprinklers</h2>
-                    <p>Programmable irrigation systems that automatically water gardens according to a schedule or weather conditions, optimizing water usage and plant health.</p>
-                    <img src="garden-sprinklers.PNG" alt="Garden Sprinklers" width="600" height="400">
-                </article>
-        </main>
+        <section class="content">
+            <article class="item">
+                <img src="img/dishwasher.png" alt="Aluminum Wedge + Dishwasher" class="decorate" width="600" height="400">
+                <p> A cleaning tool that combines an aluminum wedge with a dishwasher to enhance the efficiency of cleaning kitchen items, making the process more convenient and thorough.</p>
+            </article>
+            <article class="item reverse">
+                <p>Small, autonomous robots designed for dirt collection and dusting, simplifying the cleaning process by handling routine maintenance tasks.</p>
+                <img src="img/mice.png" alt="Robot Mice - Dirt/Dusting" class="decorate" width="600" height="400">
+            </article>
+            <article class="item">
+                <img src="img/incinerator.png" alt="Incinerator" class="decorate" width="600" height="400">
+                <p>A waste management device that burns non-recyclable materials to reduce their volume, integrated with automated systems to streamline waste disposal and handling.</p>
+            </article>
+            <article class="item reverse">
+                <p>Robotic units that transport larger waste items to an incinerator, facilitating easier and more efficient waste management.</p>
+                <img src="img/copper.png" alt="Copper Scrap Rats - Take Larger Trash to Incinerator" class="decorate" width="600" height="400">
+            </article>
+            <article class="item">
+                <img src="img/clock.png" alt="Voice Clock" class="decorate" width="600" height="400">
+                <p>A timekeeping device that announces the current time, providing hands-free convenience and accessibility.</p>
+            </article>
+            <article class="item reverse">
+                <p>An intelligent assistant that manages schedules, sets reminders, and provides verbal updates, integrating with other automated systems for seamless daily management.</p>
+                <img src="img/voice.png" alt="Voice: Schedule, Reminders, etc." class="decorate" width="600" height="400">
+            </article>
+            <article class="item">
+                <img src="img/stove.png" alt="Breakfast Stove" class="decorate" width="600" height="400">
+                <p>An automated cooking appliance that prepares breakfast foods with minimal user input, programmed to start cooking at a specific time and adjust settings for different meals.</p>
+            </article>
+            <article class="item reverse">
+                <p>A device that provides real-time weather updates and forecasts, with automated adjustments to indoor climate controls based on external conditions.</p>
+                <img src="img/weather.png" alt="Weather Box" class="decorate" width="600" height="400">
+            </article>
+            <article class="item">
+                <img src="img/garage.png" alt="Garage Doors" class="decorate" width="600" height="400">
+                <p>Electrically operated doors that open and close with remote control or automated scheduling, enhancing convenience and security for vehicle access.</p>
+            </article>
+            <article class="item reverse">
+                <p>Smart patio tables that integrate features like card games, drink dispensers, food warmers, and music systems, creating a fully automated outdoor experience.</p>
+                <img src="img/patio.png" alt="Patio Tables: Cards, Drinks, Food, Music" class="decorate" width="600" height="400">
+            </article>
+            <article class="item">
+                <img src="img/bed-warmer.png" alt="Bed Warmers" class="decorate" width="600" height="400">
+                <p>Devices that preheat the bed to a comfortable temperature before sleep, ensuring a cozy and pleasant rest.</p>
+            </article>
+            <article class="item reverse">
+                <p>Automated bathing systems that adjust water temperature, pressure, and duration based on user preferences or preset routines.</p>
+                <img src="img/bath.png" alt="Baths" class="decorate" width="600" height="400">
+            </article>
+            <article class="item">
+                <img src="img/garden-sprinklers.png" alt="Garden Sprinklers" class="decorate" width="600" height="400">
+                <p>Programmable irrigation systems that automatically water gardens according to a schedule or weather conditions, optimizing water usage and plant health.</p>
+            </article>
+        </section>
         <footer>
-            <p>&copy; 2024 Artisan Build</p>
-            <p>Explore the future of living with ArtisanBuild! Innovative, sustainable homes designed for modern lifestyles. Join us today!</p>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="page-1.html">Page 1</a></li>
+                <li><a href="page-2.html">Page 2</a></li>
+                <li><a href="page-3.html">Page 3</a></li>
+            </ul>
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@artisanbuild.com">info@artisanbuild.com</a></p>
+            <p>Phone: (555) 123-4567</p>
+            <p>© 2024 Artisan Build. All rights reserved.</p>
+            <p>&copy; 2024 Smart Home Company</p>
         </footer>
     </body>
 </html>

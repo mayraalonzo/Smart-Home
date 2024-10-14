@@ -2,52 +2,54 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A New Way of Living</title>
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li class="dropdown">
-                <a href="#menu">Menu</a>
-                <ul class="dropdown-content">
-                    <li><a href="#page-1">Page 1</a></li>
-                    <li><a href="#page-2">Page 2</a></li>
-                    <li><a href="#page-3">Page 3</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <header class="hero">
-        <img src="hero.PNG" alt="Futuristic House" class="header-image">
-        <h1>A New Way of Living</h1>
+    <header class="header">
+        <img src="img/hero.png" alt="Header Image" class="header-image">
+        <h1 class="header-text">A New Way of Living</h1>
     </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>At Artisan Build, we specialize in crafting custom homes that blend timeless design with cutting-edge technology. Our homes come equipped with futuristic amenities, offering you a living experience that’s both luxurious and forward-thinking. From smart home systems to energy-efficient innovations, we bring the future of home living to your doorstep.</p>
-            <a href="page-4.html" target="_blank">
-                <button>Learn More</button>
-            </a>
-        </section>
+    <nav>
+        <a href="index.html">
+            <img src="img/logo.png" alt="House Logo">
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Menu ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="page-1.html">Automated Technology & Safety</a></li>
+                        <li><a href="page-2.html">Automated Cleaning & Convenience</a></li>
+                        <li><a href="page-3.html">Nursery & Study</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="about">
+        <img src="img/abouthome.png" alt="futuristic house" class="content-image">
+    </section>
 
-        <section class="icon-row"> 
-            <img src="robot.gif" alt="Robot" class="icon">
-            <img src="cleaning-tools.gif" alt="Cleaning Tools" class="icon">
-            <img src="bed.gif" alt="Bed" class="icon">
-        </section>
-
-        <section class="image-gallery">
-            <img src="House1.PNG" alt="House 1">
-            <img src="House2.PNG" alt="House 2">
-            <img src="House3.PNG" alt="House 3">
-            <img src="House4.PNG" alt="House 4">
-            <img src="House5.PNG" alt="House 5">
-        </section>
-    </main>
+    <footer>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="page-1.html">Page 1</a></li>
+            <li><a href="page-2.html">Page 2</a></li>
+            <li><a href="page-3.html">Page 3</a></li>
+        </ul>
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@artisanbuild.com">info@artisanbuild.com</a></p>
+        <p>Phone: (555) 123-4567</p>
+        <p>© 2024 Artisan Build. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
